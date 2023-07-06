@@ -4,6 +4,7 @@ Overcomplicated version of a Fibonacci calculator that returns value for a given
 
 ![1688564500714](image/README/1688564500714.png)
 
+![1688648116385](image/README/1688648116385.png)
 ## Routing
 
 Nginx routes traffic to correct server based on the incoming request. Configuration can be found in `default.conf`
