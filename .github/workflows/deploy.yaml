@@ -30,6 +30,7 @@ jobs:
       - run: docker push cantem/multi-server
       - run: docker push cantem/multi-worker
 
+      #  This part is only relevant once you have EB instance set up
       # - name: Generate deployment package
       #   run: zip -r deploy.zip . -x '*.git*'
 
@@ -38,9 +39,9 @@ jobs:
       #   with:
       #     aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
       #     aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
-      #     application_name: multi-gh # change
-      #     environment_name: Multigh-env # change
-      #     existing_bucket_name: elasticbeanstalk-us-east-1-923445559289 # change
-      #     region: us-east-1 # change
+      #     application_name: multi-docker
+      #     environment_name: Multi-docker-env
+      #     existing_bucket_name: elasticbeanstalk-eu-west-2-077520875260
+      #     region: eu-west-2
       #     version_label: ${{ github.sha }}
       #     deployment_package: deploy.zip
